@@ -21,4 +21,4 @@ requires:
 resources:
   homepage: https://github.com/frioux/DBIx-Introspector
   repository: https://github.com/frioux/DBIx-Introspector.git
-version: '0.001004'
+version: '0.001005'

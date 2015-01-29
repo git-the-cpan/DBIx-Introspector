@@ -1,5 +1,5 @@
 package DBIx::Introspector;
-$DBIx::Introspector::VERSION = '0.001004';
+$DBIx::Introspector::VERSION = '0.001005';
 # ABSTRACT: Detect what database you are connected to
 
 use Moo;
@@ -154,7 +154,7 @@ sub get {
          })
    }
 
-   die "wtf"
+   die "missing key: $key"
 }
 
 sub _driver_for {
@@ -199,7 +199,7 @@ DBIx::Introspector - Detect what database you are connected to
 
 =head1 VERSION
 
-version 0.001004
+version 0.001005
 
 =head1 SYNOPSIS
 
@@ -415,7 +415,7 @@ Arthur Axel "fREW" Schmidt <frioux+cpan@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2014 by Arthur Axel "fREW" Schmidt.
+This software is copyright (c) 2015 by Arthur Axel "fREW" Schmidt.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
